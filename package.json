@@ -1,0 +1,22 @@
+{
+  "name": "ecommerceboilerplatenodejs",
+  "version": "1.0.0",
+  "description": "Boiler plate code for future ecommerce websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philpatt/eCommerceBoilerplateNodejs.git"
+  },
+  "author": "Phil Patterson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philpatt/eCommerceBoilerplateNodejs/issues"
+  },
+  "homepage": "https://github.com/philpatt/eCommerceBoilerplateNodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
