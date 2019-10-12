@@ -1,8 +1,10 @@
 var express = require('express');
 var app = express();
+var ejsLayouts = requrie('express-ejs-layouts');
 
 //set view engine
 app.set('view engine', 'ejs')
+app.use(ejsLayouts)
 
 // Home Page
 app.get('/', function(req, res){
