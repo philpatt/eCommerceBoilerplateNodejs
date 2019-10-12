@@ -1,16 +1,16 @@
 {
   "development": {
-    "database": "storefront_development",
+    "database": "users",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "database": "storefront_test",
+    "database": "users_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "database": "storefront_production",
+    "database": "users_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
