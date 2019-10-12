@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var ejsLayouts = requrie('express-ejs-layouts');
+var ejsLayouts = require('express-ejs-layouts');
 
 //set view engine
 app.set('view engine', 'ejs')
@@ -8,12 +8,12 @@ app.use(ejsLayouts)
 
 // Home Page
 app.get('/', function(req, res){
-    res.render('index.ejs')
+    res.render('home.ejs')
 });
 
 // About Page
 app.get('/about', function(req, res){
-    res.send('Here is the about section');
+    res.render('about/about.ejs')
 })
 
 app.listen(8000);
