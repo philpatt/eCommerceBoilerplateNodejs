@@ -9,8 +9,30 @@ router.get('/signup', function (req, res) {
 });
 
 router.post('/signup', function (req, res) {
-    // try sending back the form data
-    res.send(req.body);
+    // find or create a user, providing the name and password as default values
+    db.user.findOrCreate({
+        where: { email: req.body.email },
+        defaults: {
+            firstname: req.body.firstname,
+            lastname: req.body.lastname,
+            password: req.body.password,
+            permission: req.body.persmissions
+        }
+    }).spread(function (user, created) {
+        if (created) {
+            // if created, success and redirect home
+            console.log('User created!');
+            res.redirect('/');
+        } else {
+            // if not created, the email already exists
+            console.log('Email already exists');
+            res.redirect('/auth/signup');
+        }
+    }).catch(function (error) {
+        // if an error occurs, let's see what the error is
+        console.log('An error occurred: ', error.message);
+        res.redirect('/auth/signup');
+    });
 });
 
 // Login page
