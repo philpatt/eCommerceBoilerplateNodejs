@@ -32,6 +32,35 @@ app.use(function (req, res, next) {
     // before every route, attach the flash messages and current user to res.locals
     res.locals.alerts = req.flash();
     res.locals.currentUser = req.user;
+    // add nav links for all pages
+    res.locals.navData = {
+        links: [
+            {
+                url: '/',
+                text: 'Home'
+            },
+            {
+                url: '/about',
+                text: 'About'
+
+            },
+            {
+                url: '/products',
+                text: 'Products'
+
+            },
+            {
+                url: '#',
+                text: 'Cart'
+
+            },
+        ],
+        logo:{
+            imgUrl: '/img/gear_logo.png',
+            text: 'Business',
+            altText: 'logo_image'
+        },
+    },
     next();
 });
 
