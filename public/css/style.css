@@ -86,13 +86,15 @@ a {
   }
 }
 .nav .burger--active .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+  transition: transform 1s ease-in;
 }
 .nav .burger--active .line2 {
   opacity: 0;
 }
 .nav .burger--active .line3 {
-  transform: rotate(45deg) translate(5px, -6px);
+  transform: rotate(45deg) translate(-8px, -7px);
+  transition: transform 1s ease-in;
 }
 
 @media screen and (max-width: 768px) {
