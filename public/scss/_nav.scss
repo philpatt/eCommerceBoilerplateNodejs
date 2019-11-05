@@ -35,7 +35,11 @@
 
     &__link {
         list-style: none;
-        opacity: 0;
+        opacity: 1;
+        @media screen and (max-width:768px){
+
+            opacity: 0;
+        }
         a {
             color: #ffffff;
         }
@@ -44,7 +48,6 @@
     .logo {
         display: flex;
         justify-content: space-around;
-        width: 25%;
 
         &__image {
             img {
@@ -65,8 +68,10 @@
     }
 
     .burger {
-
         cursor: pointer;
+
+        &__container{
+        }
         &__line {
             display: none;
             @media screen and (max-width:768px){

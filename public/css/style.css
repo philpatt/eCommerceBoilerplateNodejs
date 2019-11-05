@@ -51,7 +51,12 @@ a {
 }
 .nav__link {
   list-style: none;
-  opacity: 0;
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .nav__link {
+    opacity: 0;
+  }
 }
 .nav__link a {
   color: #ffffff;
@@ -59,7 +64,6 @@ a {
 .nav .logo {
   display: flex;
   justify-content: space-around;
-  width: 25%;
 }
 .nav .logo__image img {
   max-width: 75px;
