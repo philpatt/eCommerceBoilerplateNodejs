@@ -41,8 +41,12 @@ a {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__list--active {
+    display: flex;
   }
 }
 .nav__link {
@@ -83,24 +87,22 @@ a {
     height: 5px;
     background-color: #ffffff;
     margin: 5px;
+    transform: none;
+    opacity: 1;
+    transition: transform 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
   }
 }
 .nav .burger--active .line1 {
   transform: rotate(-45deg) translate(-8px, 6px);
-  transition: transform 1s ease-in;
+  transition: transform 0.2s ease-in;
 }
 .nav .burger--active .line2 {
   opacity: 0;
 }
 .nav .burger--active .line3 {
   transform: rotate(45deg) translate(-8px, -7px);
-  transition: transform 1s ease-in;
-}
-
-@media screen and (max-width: 768px) {
-  .nav__list--active {
-    transform: translateX(0%);
-  }
+  transition: transform 0.2s ease-in;
 }
 
 @keyframes navLinkFade {

@@ -1,9 +1,4 @@
 
-.nav__list--active{
-    @media screen and (max-width:768px){
-        transform: translateX(0%);
-    }
-}
 
 @keyframes navLinkFade{
     from {
