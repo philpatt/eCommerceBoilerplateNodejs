@@ -1,27 +1,29 @@
 .nav {
     &__container{
         align-items: center;
-        max-height: 65px;
-        min-height: 8vh;
-        background-color: #000;
+        min-height: 65px;
+        background-color: rgb(255, 255, 255);
         display: flex;
-        justify-content: space-around;
+        border-bottom: 1px solid #000000;
     }
 
     &__list{
         width: 40%;
         display: flex;
         justify-content: space-around;
+        margin-left: auto;
+        margin-right: 100px;
         @media screen and (max-width:768px){
             position: absolute;
             right: 0px;
-            height: 92vh;
-            top: 8vh;
-            background-color: #000;
+            top: 65px;
+            height: calc(100% - 65px);
+            background-color: rgba(20, 20, 20, 0.9);
             flex-direction: column;
             align-items: center;
-            width: 50%;
+            width: 100%;
             display: none;
+            margin: 0;
         }
         
         &--active{
@@ -36,31 +38,36 @@
     &__link {
         list-style: none;
         opacity: 1;
-        @media screen and (max-width:768px){
 
-            opacity: 0;
-        }
         a {
-            color: #ffffff;
+            color: #000000;
+
+        }
+        @media screen and (max-width:768px){
+        opacity: 0;
+            a {
+                color: #ffffff;
+            }
         }
     }
 
     .logo {
+        position: absolute;
         display: flex;
-        justify-content: space-around;
+        top: 0px;
+        left: 0px;
 
         &__image {
+            padding-left: 10px;
             img {
-                max-width: 75px;
-                height: auto;
-                width: auto;
+                max-height: 64px; // -1px because of nav bottom-border
             }
         }
     
         &__text {
-            padding-left: 10px;
-            padding-top: 20px ;
-            color: #ffffff;
+            padding-left: 25px;
+            padding-top: 15px ;
+            color: #000000;
             text-transform: uppercase;
             letter-spacing: 5px;
             font-size: 20px;
@@ -69,8 +76,9 @@
 
     .burger {
         cursor: pointer;
-
-        &__container{
+        @media screen and (max-width:768px){
+            margin-left: auto;
+            margin-right: 100px;
         }
         &__line {
             display: none;
@@ -78,7 +86,7 @@
                 display: block;
                 width: 25px;
                 height: 5px;
-                background-color: #ffffff;
+                background-color: #000000;
                 margin: 5px;
                 transform: none;
                 opacity: 1;
