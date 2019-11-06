@@ -29,7 +29,7 @@ $burger.click(function(){
 $()
 // reset active nav if outside of mobile and nav is active
 $(window).resize(function(){
-    if ($(window).width() > 768 && $('burger--active') ) {
+    if ($(window).width() > 991 && $('burger--active') ) {
 
         $burger.removeClass('burger--active');
         $nav.removeClass('nav__list--active');

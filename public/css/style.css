@@ -26,13 +26,13 @@ a {
   border-bottom: 1px solid #000000;
 }
 .nav__list {
-  width: 40%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   margin-left: auto;
-  margin-right: 100px;
+  margin-right: 20%;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 991px) {
   .nav__list {
     position: absolute;
     right: 0px;
@@ -46,7 +46,7 @@ a {
     margin: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 991px) {
   .nav__list--active {
     display: flex;
   }
@@ -58,7 +58,7 @@ a {
 .nav__link a {
   color: #000000;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 991px) {
   .nav__link {
     opacity: 0;
   }
@@ -89,7 +89,7 @@ a {
 .nav .burger {
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 991px) {
   .nav .burger {
     margin-left: auto;
     margin-right: 100px;
@@ -98,7 +98,7 @@ a {
 .nav .burger__line {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 991px) {
   .nav .burger__line {
     display: block;
     width: 25px;
