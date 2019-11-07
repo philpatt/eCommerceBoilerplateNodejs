@@ -1,9 +1,10 @@
 
 
-@keyframes navLinkFade{
+@keyframes navLinkFadeIn{
     from {
         opacity: 0;
         transform: translateX(50px);
+
     }
     to {
         opacity: 1;
