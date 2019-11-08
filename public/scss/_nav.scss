@@ -1,7 +1,7 @@
 .nav {
     &__container{
         align-items: center;
-        min-height: 65px;
+        height: 65px;
         display: flex;
         border-bottom: 1px solid #000000;
         background-color: rgb(255, 255, 255);
@@ -82,7 +82,7 @@
         cursor: pointer;
         @media (max-width: 991px){
             margin-left: auto;
-            margin-right: 100px;
+            margin-right: 50px;
         }
         &__line {
             display: none;
