@@ -24,6 +24,10 @@ a {
   display: flex;
   border-bottom: 1px solid #000000;
   background-color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 .nav__list {
   width: 60%;
@@ -49,7 +53,7 @@ a {
 @media (max-width: 991px) {
   .nav__list--active {
     top: 65px;
-    height: calc(100% - 6px);
+    height: 100vh;
     opacity: 1;
     z-index: 100;
     transform: translate3d(0, 0, 0);
@@ -141,11 +145,20 @@ a {
 
 .page {
   height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url(img/rocky-buckhorn.jpg);
 }
 
 .content {
-  height: calc(100vh - (65px));
+  height: 100vh;
+  width: 100%;
   background-color: black;
+  background-image: url(../img/rocky-buckhorn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

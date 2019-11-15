@@ -5,7 +5,10 @@
         display: flex;
         border-bottom: 1px solid #000000;
         background-color: rgb(255, 255, 255);
-
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
 
     &__list{
@@ -30,7 +33,7 @@
         &--active{
             @media (max-width: 991px){
                 top: 65px;
-                height: calc(100% - 6px);
+                height: 100vh;
                 opacity: 1;
                 z-index: 100;
                 transform: translate3d(0, 0, 0);
