@@ -57,7 +57,7 @@ app.use(function (req, res, next) {
         ],
         logo:{
             imgUrl: '/img/gear_logo.png',
-            text: 'Business',
+            text: 'TGP',
             altText: 'logo_image'
         },
     },

@@ -24,7 +24,7 @@ a {
   display: flex;
   border-bottom: 1px solid #000000;
   background-color: white;
-  position: fixed;
+  position: absolute;
   right: 0;
   left: 0;
   z-index: 1030;
@@ -150,10 +150,36 @@ a {
   display: flex;
 }
 .section__top {
-  background-image: url(../img/rocky-buckhorn.jpg);
+  background-image: url(../img/rocky-buckhorn-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.section--right {
+  justify-content: flex-end;
+}
+.section .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.section .text {
+  font-weight: 100;
+  color: white;
+  text-align: center;
+}
+.section .text--spaced {
+  letter-spacing: 5px;
+}
+.section .text--underline {
+  border-bottom: 1px solid white;
+}
+.section .text--border {
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
