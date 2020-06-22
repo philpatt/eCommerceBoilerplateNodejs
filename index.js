@@ -48,17 +48,17 @@ app.use(function (req, res, next) {
                 url: '/products',
                 text: 'Products'
 
-            },
-            {
-                url: '#',
-                text: 'Cart'
-
-            },
+            }
         ],
         logo:{
             imgUrl: '/img/gear_logo.png',
             text: 'TGP',
             altText: 'logo_image'
+        },
+        cart:{
+            imgUrl: '/img/shopping-cart.png',
+            text: '',
+            altText: 'cart_icon'
         },
     },
     next();
